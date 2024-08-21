@@ -1,0 +1,12 @@
+[package]
+name = "starknetmeetup"
+version = "1.0.0"
+edition = "2023_01"
+
+[dependencies]
+openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag = "v0.15.1" }
+starknet = ">=2.7.1"
+
+[[target.starknet-contract]]
+sierra = true
+casm = true
